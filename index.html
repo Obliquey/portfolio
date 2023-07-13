@@ -15,11 +15,30 @@
         <script src="./build/main.js" async defer></script>
     </head>
     <body>
-        <h1>Anders Boyum's Portfolio. Welcome!</h1>
-        <div>
-            <div id="square">This will be a square.</div>
-            <button id="changeColor" onclick="changeColor()">Show / Hide</button>
-            <button id="shiftButton" onclick="shiftBox()">Shift</button>
-        </div>
+        <!-- Left Side Nav Bar -->
+            <!-- Fixed for whole site, pop-out when hovered over? -->
+            <!-- For now, links will scroll between different sections -->
+        <nav onmouseover="openSideBar()" onmouseout="closeSideBar()">
+            <ul id="navBar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <h1>Anders Boyum's Portfolio. Welcome!</h1>
+
+        </main>
+
+        <!-- SECTIONS -->
+            <!-- Bio -->
+                <!-- Picture of me (would be cool to not box it in, just do a headshot thing) -->
+                <!-- Separate Scrolling Description / History (Kind of like a cover letter?) -->
+                <!-- Maybe even do a tabs thing, where they can tab between my different experiences? -->
+            
+            <!-- Projects -->
+                <!-- Maybe have another tabbed list of iFrames, each of which houses different projects? -->
+            
+            <!-- Skills & Contact Info -->
     </body>
 </html>

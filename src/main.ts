@@ -1,9 +1,15 @@
-function changeColor() {
-    const square = document.getElementById("square");
-    square.classList.toggle("fullHeight");
+let sidebarOpen : boolean = false;
+
+function openSideBar() {
+    if(!sidebarOpen){
+        document.getElementById('navBar').classList.toggle('open');
+        sidebarOpen = true;
+    }
 }
 
-function shiftBox() {
-    const square = document.getElementById("square");
-    square.classList.toggle("alignOther");
+function closeSideBar() {
+    if(sidebarOpen){
+        document.getElementById('navBar').classList.toggle('open');
+        sidebarOpen = false;
+    }
 }
