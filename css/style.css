@@ -10,18 +10,41 @@ body, html{
 /* ==================================
                 MAIN 
 ====================================*/
-
 #main{
-    margin-left: 180px;
+    margin-left: 40px;
+    margin-top: 0px;
     padding: 0px 10px;
-    border-left: 1px solid black;
+    transition: margin-left .4s, margin-top .5s;
 }
 
+#main.open{
+    margin-left: 180px;
+    margin-top: 50px;
+    padding: 0px 10px;
+    transition: margin-left .4s, margin-top .5s;
+}
+
+#main-body{
+    margin: auto;
+    /* margin-top: 250px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
 
 /* ==================================
                 SIDEBAR 
 ====================================*/
-
+/* @keyframes wobbly{
+    0% { clip-path: ; } 
+   10% {  } 
+   20% { } 
+   40% { } 
+   60% {  } 
+   80% {  } 
+   100% {  }
+} */
 /* This class is for when I try to make my sidebar slide open upon hover */
 #navBar.open{
     list-style-type: none;
@@ -35,6 +58,10 @@ body, html{
     background-color: coral;
     overflow-x: hidden;
     padding-top: 20px;
+    animation-name: wobbly;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     transition: width .4s;
 
 }
@@ -51,6 +78,10 @@ body, html{
     background-color: coral;
     overflow-x: hidden;
     padding-top: 20px;
+    animation-name: wobbly;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     transition: width .4s;
 }
 
@@ -58,6 +89,7 @@ body, html{
     padding: 6px 8px 6px 16px;
     font-size: 25px;
     color: black;
+    /* border-radius: 20px; */
     transition: background-color .2s;
 }
 
@@ -72,4 +104,22 @@ body, html{
 }
 a:visited{
     color: black;
+}
+
+
+/* ==================================
+                Image-Wheel 
+====================================*/
+
+.ferrisWheelImages{
+    height: 300px;
+    width: auto;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 3px 5px rgb(240, 239, 239);
+}
+#imageWheel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
